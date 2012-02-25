@@ -1,0 +1,9 @@
+=form_for @usuario, :url=>"create" do |usuar|
+ =usuar.label :nombre
+ =usuar.text_field :nombre
+ %br
+ =usuar.label :sueldo
+ =usuar.text_field :sueldo
+ %br
+ =usuar.submit "Agregar nuevo registro"
+

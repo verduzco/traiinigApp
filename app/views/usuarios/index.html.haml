@@ -1,0 +1,13 @@
+%table 
+ %tbody 
+  %tr
+   %th id
+   %th nombre
+   %th sueldo
+ - @usuarios.each do |usuario|
+  %tr
+   %th= usuario.id
+   %th= usuario.nombre
+   %th= usuario.sueldo
+= button_to "Agregar", new_usuario_path
+
